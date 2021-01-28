@@ -1,0 +1,136 @@
+:root {
+    font-size: 18px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+section {
+    background-color: hsl(185, 75%, 39%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.card {
+    width: 350px;
+    border-radius: 20px;
+    background-color: white;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+}
+
+.card-header {
+    background-image: url(/images/bg-pattern-card.svg);
+    background-size: cover;
+    height: 150px
+}
+
+.card-body {
+    padding: 0 20px 25px;
+}
+
+.img-holder {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    border: 5px solid white;
+    overflow: hidden;
+    margin: -55px auto 30px auto;
+}
+
+.img-holder img {
+    width: 100%;
+    height: auto;
+}
+
+.name-age {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+    color: hsl(229, 23%, 23%);
+    font-weight: 700;
+}
+
+span,
+.meta,
+.city {
+    font-weight: 400;
+    color: hsl(229, 23%, 23%);
+    opacity: .7;
+}
+
+span {
+    font-size: 1.2rem;
+    margin-left: 5px;
+}
+
+.city {
+    font-size: .9rem;
+}
+
+.card-footer {
+    border-top: 1px solid hsl(0, 0%, 59%, 0.3);
+    display: flex;  
+    padding: 0 25px; 
+}
+
+.card-footer .item {
+    flex: 1;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.value {
+    font-size: 1.1rem;
+    margin-bottom: 6px;
+    color:hsl(229, 23%, 23%);
+    font-weight: 700;
+}
+
+.meta {
+    letter-spacing: 1px;
+    font-size: .6rem;   
+}
+
+.circles .c1,
+.circles .c2{
+    position: absolute;
+}
+
+.circles .c1 {
+    top: -320px;
+    left: -125px;
+}
+.circles .c2 {
+    bottom: -500px;
+    right: -100px;
+}
+
+.circles img{
+    width: 55%;
+}
+
+.attribution {
+    position: absolute;
+    bottom: 10px;
+    font-size: .7rem;
+    color: hsl(229, 23%, 23%);
+    font-weight: 700;
+
+}
